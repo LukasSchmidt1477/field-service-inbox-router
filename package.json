@@ -1,0 +1,21 @@
+{
+  "name": "field-service-inbox-router",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/field_service_server.ts",
+    "start": "tsx src/field_service_server.ts",
+    "demo": "tsx scripts/preview_submission.ts",
+    "test": "node --import tsx --test test/work_order.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
